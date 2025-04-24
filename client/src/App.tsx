@@ -7,7 +7,6 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Tienda from "@/pages/Tienda";
 import ErrorPage from './pages/ErrorPage';
-import './App.css';
 
 function Router() {
   return (
