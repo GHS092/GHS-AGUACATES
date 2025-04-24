@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales */
+@layer base {
+  :root {
+    --primary: 94 46 52; /* #2D5C34 Verde */
+    --primary-foreground: 249 246 240; /* #F9F6F0 Crema */
+    --secondary: 198 169 108; /* #C6A96C Dorado */
+    --background: 249 246 240; /* #F9F6F0 Crema */
+    --foreground: 51 51 51; /* #333333 Texto */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .luxury-button {
+    @apply inline-flex items-center justify-center px-8 py-3 text-sm uppercase tracking-wider font-medium text-[#2D5C34] bg-transparent border border-[#2D5C34]/80 hover:bg-[#2D5C34] hover:text-white transition-all duration-300;
+  }
+
+  .luxury-button-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 text-sm uppercase tracking-wider font-medium text-white bg-[#C6A96C] border border-[#C6A96C] hover:bg-[#C6A96C]/90 hover:border-[#C6A96C]/90 transition-all duration-300 shadow-md;
+  }
+
+  .section-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C6A96C' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+} 
